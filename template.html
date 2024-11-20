@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$RIFT.TITLE</title>
+    <style>
+          
+:root {
+    --background: #cfc5e6;
+    --main: #e1dff1;
+    --alt: #c9bbd4;
+    --alt2: #beb4c7;
+    --text: #241f30;
+    --accent: #8157cf;
+    --accent2: #eb83d4;
+    --shadows: #79757e;
+    --screenwidth: ;
+}
+  
+  body {
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 20px;
+    margin-top: 80px;
+    line-height: 150%;
+  }
+  
+  hr {
+  height: 1pt;
+  background-color: var(--accent);
+  border: none;
+  }
+  
+  a {
+  color: var(--accent);
+  text-decoration: none;
+  }
+  
+  img {
+  border-radius: 2pt;
+  cursor: pointer;
+  transition: all, cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.25s;
+  max-width: 720px;
+  width: 80%;
+  }
+  
+  p {
+    margin-inline: 4px;
+  }
+  
+  .spoiler {
+  filter: blur(10px);
+  }
+  
+  .spoiler:active:active {
+  z-index: 1;
+  filter: blur(0px);
+  }
+  
+  .flag {
+  width: 20px;
+  }
+  
+  .icon {
+    width: 32px;
+  }
+
+  .badge {
+    width: 96px;
+  }
+
+  video{
+    width: 100%;
+  }
+
+  h1 {
+    margin-inline: 8px;
+  }
+
+  .banner {
+  height: 150pt;
+  background-image: linear-gradient(to bottom right, var(--accent), var(--accent2));
+  margin: 20pt;
+  margin-inline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50pt;
+  font-weight: bold;
+  color: white;
+  box-shadow: var(--shadows) 0px 0px 50px;
+  }
+  
+  .root {
+  max-width: fit-content;
+  margin-inline: auto;
+  text-align: center;
+  width: 90%;
+  }
+  
+  .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  max-width: 960px;
+  transition: all, 0.5s;
+  background: var(--main);
+  margin: 20px;
+  padding: 4px;
+  margin-inline: 0px;
+  border-radius: 8px;
+  }
+  
+  button {
+    background-color: var(--main);
+    padding: 15px 100px;
+    border-color: transparent;
+    margin-inline: 8px;
+    cursor: pointer;
+    color: var(--text);
+    border-style:solid;
+    border-color: var(--accent);
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 960px;
+    transition: all, 0.5s;
+    line-height: 1.2;
+  }
+  
+  iframe {
+  width: 100%;
+  border: none;
+  }
+  
+  code {
+  background-color: var(--background);
+  padding: 2px;
+  }
+  
+  .div_audio {
+  max-width: 95%;
+  background-color: var(--main);
+  border-width: 2pt;
+  border-style:solid;
+  border-color: var(--accent);
+  padding: 10pt;
+  margin: 10pt;
+  box-shadow: var(--shadows) 0px 0px 50px;
+  }
+  
+  audio {
+    border-style:solid;
+    border-color: var(--accent);
+    border-radius: 30pt;
+  }
+  
+  .topnav {
+    background-color: var(--main);
+    box-shadow: var(--shadows) 0px 0px 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--text);
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: all, 0.2s;
+  }
+  
+  .topnav a:hover {
+    background-color: var(--alt2);
+  }
+  
+  .topnav a.active {
+    background-color: var(--accent);
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="icon" href="https://openrift.github.io"><img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAADsElEQVR4Xu2coW4WQRSFW4XFQYA0BIUADKooElBYBE9ABRaFoigUFlGeAIFFQYKiCgMIFCENEHBYFIQH6Jwmp4e7s/f77N+d7s6ee86d+Sf/5ga0ZrP10wMC6A4O0BwE0BwE0BwE0BwE0Jz2Avhx7/6fSg2cfvqk9B2U/vMlgACagwCagwCagwCagwCagwCagwAmp/oFpknvE0y/D4AAPBDAwsEBBDiABw6wcHAAHCBapNHB/wdEgAcCWDjtI0BV+McvF4ev8NL5T8PP1fUKd3x1PQIQBzbUC1QTrK5XuOOr6xEAAojGdHTw4wABIIDhmT1l4cpi1fUKd3x1PRFABERdOjr4cYAAEAAREKTcAV7dehY9l7/z/mFw+jR7Vx7pPxpw8+Xd6DuKDn4UEMAYBGCCA4zBAcIQAQIigAigCaQJzEEPQA+QU9cRaN8DVGf856/fSxtd9/mnXwa6E6BQFo8AiiMAAXhNLg4gwAE84vmIA+AApet8egB6gLjLjXAdkB6AHiAq4Ojg/3ArYO1NnqK9AyAAHGBYJLM3eQocQBzpQgAe9AAmbo+jwAFwgGiRRgdnFeCDA+AA0SKNDn4UB3j969uwTB6/3Y3e44Nru8Ot6hsnzw7vT92/e336+aOTiwA2EIDqklUFpSsABwiDALwISRcAEUAPkAUHwAGGXTY9QO0qiAggAjzUBLqoJij9/9M8P9gr/bbTdoD0C0AA2SNtCKAYHECAA+AAQ5dKR1AaHAAHoAkcQQQQAURAkPJVgJuBS+8B3OdLgwDCIACBO0E4gAcOEMYVeBoEEAYBEAGl63wFDhAGB8AB1u0A16/eHp742T5x2drpU1w4dyb6EzR3tnaGt7D/+8Pw8zfvXtgum8S+OQSAAHCAATgAEWC7bBL75ogAIoAIIAIOhwggAlgGLph4D6BYepesehyX6udHAAIEEJ6g6gpQIAAEEN1qri4AIiAscAUCWPgyiQgIVwgCqN0nIALCAldUF4AUgGuBBz/3h3NQ/WPPCnXeYOvUthqiFCUwBCBAAOLEjwIHqAUHMMEBcIDhRhA9gIAIqIUIMCECiAAiwCkiZUGz4xZIGjX/8X0AdQOzgwAECKAWNf84gAkOgANYPVIaHCAMDoAD4AAjlAXNzuodQO2EKZb+fb+LOz9p1PzLVYD7gOoGZsednzRq/hGACQIQKAXODgJAAIteBagCJAJMcAAcAAcYoSxodlbvALBuZA8A6wYBNAcBNAcBNAcBNAcBNAcBNOcvo4lQvVdMsJEAAAAASUVORK5CYIIA></a>
+        <a>Rift GUI v$RIFT.VERSION</a>
+      </div>
+    <div class="root">
+        $RIFT.CONTENT
+    </div>
+</body>
+</html>
